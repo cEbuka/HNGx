@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>My Profile</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="/dist/output.css" rel="stylesheet">
+    </head>
+    <body class="m-0 p-5 h-screen">
+        <section class="flex justify-center items-center flex-col w-full rounded-xl bg-orange-200 m-auto p-10" >
+            <div class="flex mx-auto gap-[2rem] flex-row" onload="time()">
+                <h1 class="text-xl font-mono font-extrabold" id="time" data-testid="currentUTCTime"></h1>
+                <h1 class="text-xl font-mono font-extrabold" id="day" data-testid="currentDayOfTheWeek"></h1>
+            </div>
+            <div class="flex flex-col justify-center items-center gap-2">
+                <img class="w-full rounded-xl" src="../assets/profile_pic.png" alt="Simon Chukwuebuka" data-testid="slackDisplayImage" id="prof_img">
+                <h1 class="text-xl font-mono font-extrabold" id="name" data-testid="slackUserName"></h1>
+                <h1 class="text-xl font-mono font-bold" id="track" data-testid="myTrack"></h1>
+                <a href="https://github.com/cEbuka/HNGx?search=1" data-testid="githubURL" id="github_url" target="_blank">
+                    <img
+                    class="w-10 h-10"
+                    src="../assets/github-mark.png"
+                    alt="github logo"
+                    >
+                </a>
+            </div>
+        </section>
+        <script src="/src/index.js"></script>
+    </body>
+</html>
